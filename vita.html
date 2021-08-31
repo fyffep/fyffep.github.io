@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pete Fyffe</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- FONT & ICONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!--link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Questrial&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Lucida" rel="stylesheet" type="text/css"-->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- STYLE SHEETS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/themed-styles.css" />
+    <link rel="stylesheet" href="css/my-styles.css" />
+  </head>
+
+  <body>
+    <!-- ======== HEADER ======== -->
+    <header id="header">
+      <a href="/"><i class="bx bx-code-curly"></i></a>
+      <nav class="navbar">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="/">Home</a></li>
+          <li class="nav__item"><a href="/#projects">Projects</a></li>
+          <li class="nav__item"><a href="/credits.html">Credits</a></li>
+          <li class="nav__item"><a href="/blog.html">Blog</a></li>
+          <div class="nav__item themecolor" title="change theme">
+            <i class="bx bxs-sun" title="light mode"></i>
+            <i class="bx bxs-moon" title="dark  mode"></i>
+          </div>
+        </ul>
+      </nav>
+      <div class="open_close_menu__container">
+        <i class="bx bx-menu"></i>
+        <i class="bx bx-x"></i>
+      </div>
+    </header>
+    <!-- ======== MAIN ======== -->
+    <main>
+      <!-- SECTION 1: Portrait and Main Title -->
+      <div class="row vh75">
+        <img
+          class="six columns img-card"
+          src="images/vitaLogoColor.png"
+          alt="Logo"
+        />
+      </div>
+
+      <br class="spacer" />
+
+      <p class="h2-standard bold">Overview</p>
+      <p class="h3-standard">Healthcare management system</p>
+      <br class="spacer-xs" />
+      <div class="row"><hr class="hr-30" /></div>
+
+      <br class="spacer-mini" />
+      <p class="p-article padded">
+        Vita is a healthcare management system where doctors, patients, and
+        insurance providers can schedule and view appointments, recommend
+        insurance packages, and chat with other users. Each user has access to a
+        subset of the features based on their role.
+      </p>
+      <p class="p-article padded">
+        This project was developed in Spring 2021 when I took my first
+        graduate-level course as a sophomore. I led the group using self-taught
+        knowledge, and we even achieved 3rd place out
+        of ten.
+      </p>
+      <p class="p-article padded">
+        I also gained a deep understanding of Agile development and software
+        engineering best practices.
+        Watch the <a class="a-basic" href="#the-video">video below</a> for thorough detail.
+      </p>
+
+      <br class="spacer-normal" />
+
+      <div class="thin-border padded">
+        <br class="spacer-xs" />
+        <p class="h3-standard">Website</p>
+        <div class="row"><hr class="hr-20" /></div>
+        <p class="h3-standard">
+          <a class="a-basic" href="http://vita-healthcare.herokuapp.com/">
+            http://vita-healthcare.herokuapp.com/
+          </a>
+        </p>
+        
+        <br class="spacer-xs" />
+        <p class="h3-standard">GitHub</p>
+        <div class="row"><hr class="hr-20" /></div>
+        <p class="h3-standard">
+          <a class="a-basic" href="https://github.com/fyffep/P565-SP21-Patient-Manager">
+            https://github.com/fyffep/P565-SP21-Patient-Manager
+          </a>
+        </p>
+        <br class="spacer-xs" />
+      </div>
+
+      <!--Video-->
+      <br class="spacer-normal" />
+      <p class="h3-standard" id="the-video">Video Demo</p>
+      <p class="p-article padded">
+        I showcase an overview of the project here. Skip to 2:00 to see the website first.
+      </p>
+      <br class="spacer-mini" />
+      <video width="100%" height="100%" controls>
+        <source src="images/VitaVideo.mp4" type="video/mp4">
+        Your browser does not support the playback of the video :(
+      </video> 
+      <br class="spacer-mini" />
+
+      <!--Features List-->
+      <br class="spacer-mini" />
+      <p class="h3-standard">Features</p>
+      <ul class="ul-article padded">
+        <p class="ul-subheader bold">Patients</p>
+        <ul class="ul-article padded-half">
+          <li>Can search and filter doctors</li>
+          <li>Can view available appointment times</li>
+          <li>Can optionally provide address to find doctors on Google Maps</li>
+          <li>May accept or decline insurance package recommendations</li>
+          <li>Are provided with a default insurance package upon sign-up</li>
+          <li>May view upcoming and past appointments</li>
+        </ul>
+        <p class="ul-subheader bold">Doctors</p>
+        <ul class="ul-article padded-half">
+          <li>Can view upcoming apppointments</li>
+        </ul>
+        <p class="ul-subheader bold">Insuance Providers</p>
+        <ul class="ul-article padded-half">
+          <li>Can create insurance packages</li>
+          <li>Can recommend insurance packages</li>
+        </ul>
+        <p class="ul-subheader bold">All Users</p>
+        <ul class="ul-article padded-half">
+          <li>Can chat</li>
+          <li>Can customize their profile</li>
+        </ul>
+      </ul>
+
+      <!--Tech Stack-->
+      <br class="spacer-mini" />
+      <p class="h3-standard">Tech Stack</p>
+      <div class="row">
+        <div class="six columns list-duo-column padded">
+            <p class="h4-standard"><u>Technologies</u></p>
+            <ul class="ul-tech padded">
+                <li><i class="bx bxl-spring-boot"></i>Spring Boot</li>
+                <li><i class="bx bxl-react"></i>React</li>
+                <li><i class="bx bxl-redux"></i>Redux</li>
+                <li><i class="bx bxs-data"></i>MySQL</li>
+            </ul>
+        </div>
+        <div class="six columns list-duo-column padded">
+            <p class="h4-standard"><u>Tools</u></p>
+            <ul class="ul-tech padded">
+                <li><i class="bx bxl-github"></i>GitHub</li>
+                <li><i class="bx bxs-rocket"></i>Heroku</li>
+                <li><i class="bx bxs-flask"></i>Postman</li>
+                <li><i class="bx bxl-bootstrap"></i>Bootstrap</li>
+            </ul>
+        </div>
+      </div>
+
+      <br class="spacer-mini" />
+      <p class="h3-standard">Responsibilities</p>
+      <ul class="ul-article padded">
+        <li>
+          Developed entire back-end API and almost all front-end components
+        </li>
+        <li>Created documentation and test cases</li>
+        <li>Deployed every week and thoroughly tested the application</li>
+        <li>Led customer-facing presentations to showcase progress</li>
+        <li>Instructed team member on how to use the libraries</li>
+      </ul>
+
+      <br class="spacer-mini" />
+      <p class="h3-standard">Challenges Faced</p>
+      <ul class="ul-article padded">
+        <li>We began with little experience</li>
+        <ul class="padded">
+          <li>Overcame by developing working code first then improvements later</li>
+        </ul>
+        <li>Two members dropped out at the beginning</li>
+        <ul class="padded">
+          <li>Overcame by putting in ~30 hours a week</li>
+        </ul class="padded">
+        <li>Roadblocks in user authentication and deployment</li>
+        <ul class="padded">
+          <li>Solved by buying an online course</li>
+        </ul>
+      </ul>
+
+      <br class="spacer-normal" />
+
+      <p class="h1-standard bold">View Another Project</p>
+      <br class="spacer-mini" />
+      <div class="row div-card">
+        <a class="row a-card shadowed" href="supercontinent-lutil.html">
+          <img
+            class="columns img-card"
+            src="images/SUPERCONTINENT_LÙTIL.png"
+            alt="Game"
+          />
+        </a>
+      </div>
+
+      <br class="spacer-normal" />
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="end__footer">
+      <div class="div-copyright">
+        <span>© Copyright Pete Fyffe 2021</span>
+      </div>
+      <!--span class="designer"><a href="https://thierrymugisha.me" target="_blank">Thierry M.</a></span-->
+    </footer>
+  </body>
+
+  <script>
+    const navBar = document.querySelector(".navbar");
+    const openMenuToggle = document.querySelector(".bx-menu");
+    const closeMenuToggle = document.querySelector(".bx-x");
+    const homeImage = document.querySelector(".img_home");
+
+    // --- OPEN MENU
+
+    openMenuToggle.addEventListener("click", () => {
+      if (navBar.classList.contains("show_navbar")) {
+        navBar.classList.remove("show_navbar");
+      } else {
+        navBar.classList.add("show_navbar");
+        openMenuToggle.classList.add("hide");
+        closeMenuToggle.classList.add("show");
+      }
+    });
+
+    // --- CLOSE MENU
+
+    closeMenuToggle.addEventListener("click", () => {
+      if (navBar.classList.contains("show_navbar")) {
+        navBar.classList.remove("show_navbar");
+        openMenuToggle.classList.remove("hide");
+        closeMenuToggle.classList.remove("show");
+      }
+    });
+
+    // --------- DARK MODE ACTIVATION ----------
+    let darkMode = localStorage.getItem("whitemode");
+    const darkModeToggle = document.querySelector(".themecolor");
+    const sunIcon = document.querySelector(".bxs-sun");
+    const moonIcon = document.querySelector(".bxs-moon");
+
+    const enableDarkMode = () => {
+      // 1. Add the class dark mode to the body
+      document.body.classList.add("whitemode");
+      // 2. Update dark mode in the local storage
+      localStorage.setItem("whitemode", "enabled");
+    };
+
+    if (darkMode === "enabled") {
+      enableDarkMode();
+      sunIcon.classList.add("hide");
+      moonIcon.classList.add("show");
+    }
+
+    const disableDarkMode = () => {
+      // 1. Remove class dark mode to the body
+      document.body.classList.remove("whitemode");
+      localStorage.setItem("whitemode", null);
+    };
+
+    darkModeToggle.addEventListener("click", () => {
+      darkMode = localStorage.getItem("whitemode");
+      if (darkMode !== "enabled") {
+        enableDarkMode();
+        sunIcon.classList.add("hide");
+        moonIcon.classList.add("show");
+      } else {
+        disableDarkMode();
+        sunIcon.classList.remove("hide");
+        moonIcon.classList.remove("show");
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pete Fyffe</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- FONT & ICONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!--link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Questrial&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Lucida" rel="stylesheet" type="text/css"-->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- STYLE SHEETS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/themed-styles.css" />
+    <link rel="stylesheet" href="css/my-styles.css" />
+  </head>
+
+  <body>
+    <!-- ======== HEADER ======== -->
+    <header id="header">
+      <a href="/"><i class="bx bx-code-curly"></i></a>
+      <nav class="navbar">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="/">Home</a></li>
+          <li class="nav__item"><a href="/#projects">Projects</a></li>
+          <li class="nav__item"><a href="/credits.html">Credits</a></li>
+          <li class="nav__item"><a href="/blog.html">Blog</a></li>
+          <div class="nav__item themecolor" title="change theme">
+            <i class="bx bxs-sun" title="light mode"></i>
+            <i class="bx bxs-moon" title="dark  mode"></i>
+          </div>
+        </ul>
+      </nav>
+      <div class="open_close_menu__container">
+        <i class="bx bx-menu"></i>
+        <i class="bx bx-x"></i>
+      </div>
+    </header>
+    <!-- ======== MAIN ======== -->
+    <main>
+      <br class="spacer-normal" />
+
+      <!-- Title -->
+      <p class="h2-standard bold">Credits</p>
+      <p class="h4-standard">
+        These resources helped make my projects possible
+      </p>
+      <br class="spacer-xs" />
+      <div class="row"><hr class="hr-30" /></div>
+
+      <!-- Credits Lists -->
+      <br class="spacer-mini" />
+      <ul class="ul-article padded">
+        <p class="ul-subheader bold">Vita</p>
+        <ul class="ul-article padded-half">
+          <li>
+            Special thanks to Agile Intelligence for creating a practical Udemy
+            course for Spring Boot, React, Redux, and MySQL. The back-end
+            authentication system borrows their design, too.
+            <a
+              href="https://www.udemy.com/course/full-stack-project-spring-boot-20-react-redux/"
+              target="_blank"
+              class="a-basic"
+              >Find the course here</a
+            >.
+          </li>
+          <li>
+            All images were created by freepik at
+            <a
+              href="https://www.flaticon.com/authors/freepik"
+              target="_blank"
+              class="a-basic"
+              >flaticon.com</a
+            >.
+          </li>
+        </ul>
+
+        <p class="ul-subheader bold">Supercontinent Lútil</p>
+        <ul class="ul-article padded-half">
+          <li>
+            Terrain art was created primarily by Daniel Eddeland, Lanea
+            Zimmerman, and William Thompson. You can find their art on
+            <a
+              href="https://opengameart.org/art-search?keys=lpc"
+              target="_blank"
+              class="a-basic"
+              >OpenGameArt</a
+            >
+            by searching "LPC"
+          </li>
+          <li>
+            Character art was taken from RPG Maker. I do not plan to generate
+            revenue from this project due to the license.
+          </li>
+        </ul>
+
+        <p class="ul-subheader bold">This Website</p>
+        <ul class="ul-article padded-half">
+          <li>
+            Thierry Mugisha provided some of the CSS for this site including the
+            header and light/dark theme code.
+            <a
+              href="https://codepen.io/r_e_d_ant/details/vYmKxPy"
+              target="_blank"
+              class="a-basic"
+              >Link to his code.</a
+            >
+          </li>
+        </ul>
+      </ul>
+
+      <br class="spacer-normal" />
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="end__footer">
+      <div class="div-copyright">
+        <span>© Copyright Pete Fyffe 2021</span>
+      </div>
+      <!--span class="designer"><a href="https://thierrymugisha.me" target="_blank">Thierry M.</a></span-->
+    </footer>
+  </body>
+
+  <script>
+    const navBar = document.querySelector(".navbar");
+    const openMenuToggle = document.querySelector(".bx-menu");
+    const closeMenuToggle = document.querySelector(".bx-x");
+    const homeImage = document.querySelector(".img_home");
+
+    // --- OPEN MENU
+
+    openMenuToggle.addEventListener("click", () => {
+      if (navBar.classList.contains("show_navbar")) {
+        navBar.classList.remove("show_navbar");
+      } else {
+        navBar.classList.add("show_navbar");
+        openMenuToggle.classList.add("hide");
+        closeMenuToggle.classList.add("show");
+      }
+    });
+
+    // --- CLOSE MENU
+
+    closeMenuToggle.addEventListener("click", () => {
+      if (navBar.classList.contains("show_navbar")) {
+        navBar.classList.remove("show_navbar");
+        openMenuToggle.classList.remove("hide");
+        closeMenuToggle.classList.remove("show");
+      }
+    });
+
+    // --------- DARK MODE ACTIVATION ----------
+    let darkMode = localStorage.getItem("whitemode");
+    const darkModeToggle = document.querySelector(".themecolor");
+    const sunIcon = document.querySelector(".bxs-sun");
+    const moonIcon = document.querySelector(".bxs-moon");
+
+    const enableDarkMode = () => {
+      // 1. Add the class dark mode to the body
+      document.body.classList.add("whitemode");
+      // 2. Update dark mode in the local storage
+      localStorage.setItem("whitemode", "enabled");
+    };
+
+    if (darkMode === "enabled") {
+      enableDarkMode();
+      sunIcon.classList.add("hide");
+      moonIcon.classList.add("show");
+    }
+
+    const disableDarkMode = () => {
+      // 1. Remove class dark mode to the body
+      document.body.classList.remove("whitemode");
+      localStorage.setItem("whitemode", null);
+    };
+
+    darkModeToggle.addEventListener("click", () => {
+      darkMode = localStorage.getItem("whitemode");
+      if (darkMode !== "enabled") {
+        enableDarkMode();
+        sunIcon.classList.add("hide");
+        moonIcon.classList.add("show");
+      } else {
+        disableDarkMode();
+        sunIcon.classList.remove("hide");
+        moonIcon.classList.remove("show");
+      }
+    });
+  </script>
+</html>

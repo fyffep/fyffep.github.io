@@ -1,0 +1,265 @@
+/*///////////////// HTML TAGS ///////////////////////*/
+
+* {
+    font-size: 14pt;
+    padding: 0px;
+    margin: 0;
+}
+
+main {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+/*button {
+    background-color: #aaaaaa;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+}
+
+input {
+    font-size: 16px !important;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border-collapse: collapse;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}*/
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: var(--clr-background);
+    color: var(--clr-foreground-alt);
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    transition: background-color 300ms;
+}
+a {
+  text-decoration: none;
+}
+.bx {
+  cursor: pointer;
+}
+.title {
+  color: var(--clr-foreground);
+  letter-spacing: 0.05rem;
+  font-size: 2rem;
+}
+.text {
+  color: var(--clr-foreground-alt);
+}
+.centered-text {
+    text-align: center !important;
+}
+.container {
+  padding: 0 1rem;
+}
+
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.six {
+    width: 50%;
+    max-width: 50%;
+}
+.columns {
+    display: flexbox;    
+}
+
+.spacer-large {
+    margin-bottom: 6rem;
+}
+.spacer-normal {
+    margin-bottom: 4rem;
+}
+.spacer-mini {
+    margin-bottom: 0.5rem;
+}
+.spacer-mini {
+    margin-bottom: 0.1rem;
+}
+.vh75 {
+    min-height: 75vh;
+}
+
+
+/*///////////////// LANDING & NAV BAR ELEMENTS ///////////////////////*/
+
+.button-landing-page {
+    width: 50% !important;
+    height: auto !important;
+    font-size: 24px !important;
+    font-family: "Titillium Web" !important;
+    border-radius: 18px !important;
+    border: none !important;
+}
+
+.img-landing {
+    order: 1;
+    max-height: 18.0rem;
+    max-width: 18.0rem;
+    border: 10px solid var(--primary-color);
+    border-radius: 100%;
+}
+.title-landing {
+    order: 2;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: auto;
+}
+.h1-landing {
+    font-size: 2.5rem;
+}
+.h2-landing {
+    font-size: 2.0rem;
+}
+
+
+
+.h1-standard {
+    text-align: center;
+    font-size: 1.8rem;
+}
+.h2-standard {
+    text-align: center;
+    font-size: 1.6rem;
+}
+.h3-standard {
+    text-align: center;
+    font-size: 1.3rem;
+}
+.h4-standard {
+    text-align: center;
+    font-size: 1.25rem;
+}
+.h5-standard {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.h6-standard {
+    text-align: center;
+    font-size: 1.0rem;
+}
+.hr-40 {
+    width: 40%;
+}
+.hr-30 {
+    width: 30%;
+}
+.hr-20 {
+    width: 20%;
+}
+
+.p-article {
+    margin-top: 0.5rem;
+    text-align: justify;
+    width: 80%;
+}
+.ul-article {
+    margin-top: 0.5rem;
+    width: 80%;
+}
+.ul-subheader {
+    margin-top: 0.5rem;
+}
+.ul-tech {
+    margin-top: 0.5rem;
+    width: 80%;
+    list-style: none;
+}
+.ul-tech li i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    cursor: default;
+}
+
+
+.padded {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.padded-half {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+.div-card {
+    min-height: 9rem;
+}
+.a-card {
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    height: 9rem;
+}
+.img-card {
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+}
+
+
+
+
+/*///////////////// MOBILE-SPECIFIC STYLES ///////////////////////*/
+@media screen and (max-width: 769px) {
+    .row {
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .six {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 1 0 51%;
+    }
+    .columns {
+    }
+
+    .img-landing {
+        order: 2;
+        height: 20% !important;
+        max-height: 20% !important;
+        margin: 10%;
+    }
+    .title-landing {
+        margin-top: 1rem;
+        order: 1;
+        text-align: center;
+    }
+
+    .list-duo-column {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
