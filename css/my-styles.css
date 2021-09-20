@@ -207,6 +207,14 @@ a {
     margin-right: 5%;
 }
 
+.padded-left {
+    margin-left: 10%;
+}
+
+.padded-half-left {
+    margin-left: 5%;
+}
+
 
 
 .div-card {
