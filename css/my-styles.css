@@ -204,6 +204,11 @@ body {
     margin-right: 5%;
 }
 
+.padded-20 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 .padded-left {
     margin-left: 10%;
 }
@@ -231,6 +236,16 @@ body {
     max-width: 100%;
 }
 
+
+/* For Android videos */
+.video-insert {
+    width: 100%;
+    height: 100%;
+}
+.video-wrapper {
+    width: 100%;
+    height: 75vh;
+}
 
 
 
@@ -266,5 +281,10 @@ body {
         padding-bottom: 5%;
         padding-left: 10%;
         padding-right: 10%;
+    }
+
+    .padded-20 {
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
