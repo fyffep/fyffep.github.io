@@ -59,7 +59,7 @@
       <p class="h5-standard padded">
         ⚠
         <br/>
-        This project is a work-in-progress, but you can still watch the video below to see the latest progress on Supercontinent Lútil.
+        This project was just for fun, so there is not much but a demonstration that React.js can facilitate game development.
         <br/>
         ⚠
       </p>
@@ -79,13 +79,13 @@
       </p>
       <p class="p-article padded">
         <!--To develop this project, I think carefully about how and when information would be processed through the server.-->
-        For this project, it's important to keep not only extensibility and maintainability in mind but also performance.
+        For this project, it was important to keep not only extensibility and maintainability in mind but also performance.
         Since player and enemy positions must be updated many times per second, 
         I had to develop a server that would keep up.
       </p>
       <p class="p-article padded">
-        Thus far, React Hooks have been the best part of the project!
-        I realized that taking an hour or two to learn new technology can sometimes have monumental impact.
+        React Hooks made this project exciting; the majority of view updates are done through them. 
+        In this case, taking just a few hours to learn React's newest features had a monumental impact.
         I explain briefly in the video what React Hooks are. 
       </p>
       
@@ -148,12 +148,23 @@
 
 
       <!--Coming Soon Features-->
-      <br class="spacer-normal" />
+      <!--br class="spacer-normal" />
       <p class="h3-standard">Coming Soon</p>
       <ul class="ul-article padded">
         <li>Deployment: The app will be deployed as a Docker container to Heroku</li>
         <li>An original story to illustrate the technologically advanced yet decadent future of the first-world</li>
         <li>Complex battle mechanics intended to make players think</li>
+      </ul-->
+
+      <!--Lessons Learned-->
+      <br class="spacer-normal" />
+      <p class="h3-standard">Lessons Learned</p>
+      <ul class="ul-article padded">
+        <li>Game development is possible for browsers, but the <u>MVC</u> architecture must be well-planned</li>
+        <li>React.js <u>functional components</u> with Hooks are strongly preferred to class-based components (depending on the use case)</li>
+        <li>Redux can be omitted in favor of React Contexts or other state managers depending on the nature of the project</li>
+        <li><u>Docker containerization</u> is a difficult learning curve but well worth the effort</li>
+        <li>Even when working alone, <u>cognitive load</u> must be considered in the design of the view hierarchy</li>
       </ul>
 
 
