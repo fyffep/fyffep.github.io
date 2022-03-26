@@ -340,103 +340,13 @@
     </footer>
   </body>
 
-  <script>
-    const navBar = document.querySelector(".navbar");
-    const openMenuToggle = document.querySelector(".bx-menu");
-    const closeMenuToggle = document.querySelector(".bx-x");
-    const homeImage = document.querySelector(".img_home");
-
-    // --- OPEN MENU
-
-    openMenuToggle.addEventListener("click", () => {
-      if (navBar.classList.contains("show_navbar")) {
-        navBar.classList.remove("show_navbar");
-      } else {
-        navBar.classList.add("show_navbar");
-        openMenuToggle.classList.add("hide");
-        closeMenuToggle.classList.add("show");
-      }
-    });
-
-    // --- CLOSE MENU
-
-    closeMenuToggle.addEventListener("click", () => {
-      if (navBar.classList.contains("show_navbar")) {
-        navBar.classList.remove("show_navbar");
-        openMenuToggle.classList.remove("hide");
-        closeMenuToggle.classList.remove("show");
-      }
-    });
-
-    // --------- DARK MODE ACTIVATION ----------
-    let darkMode = localStorage.getItem("whitemode");
-    const darkModeToggle = document.querySelector(".themecolor");
-    const sunIcon = document.querySelector(".bxs-sun");
-    const moonIcon = document.querySelector(".bxs-moon");
-
-    const enableDarkMode = () => {
-      // 1. Add the class dark mode to the body
-      document.body.classList.add("whitemode");
-      // 2. Update dark mode in the local storage
-      localStorage.setItem("whitemode", "enabled");
-    };
-
-    if (darkMode === "enabled") {
-      enableDarkMode();
-      sunIcon.classList.add("hide");
-      moonIcon.classList.add("show");
-    }
-
-    const disableDarkMode = () => {
-      // 1. Remove class dark mode to the body
-      document.body.classList.remove("whitemode");
-      localStorage.setItem("whitemode", null);
-    };
-
-    darkModeToggle.addEventListener("click", () => {
-      darkMode = localStorage.getItem("whitemode");
-      if (darkMode !== "enabled") {
-        enableDarkMode();
-        sunIcon.classList.add("hide");
-        moonIcon.classList.add("show");
-      } else {
-        disableDarkMode();
-        sunIcon.classList.remove("hide");
-        moonIcon.classList.remove("show");
-      }
-    });
 
 
 
 
-    //// Slideshow (from W3 Schools) ////
-    var slideIndex = 1;
-    showSlides(slideIndex);
 
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    } 
-  </script>
+  
+  <script src="scripts/glean.js"></script>
+  <script src="scripts/dark-mode-navbar.js"></script>
+  <script src="scripts/slideshow.js"></script>
 </html>
