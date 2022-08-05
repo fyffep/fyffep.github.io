@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="noindex,nofollow">
+    <title>Pete Fyffe</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- FONT & ICONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!--link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Questrial&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Lucida" rel="stylesheet" type="text/css"-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- STYLE SHEETS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/themed-styles.css" />
+    <link rel="stylesheet" href="css/my-styles.css" />
+    <link rel="stylesheet" href="css/slideshow-styles.css" />
+  </head>
+
+  <body>
+    <!-- ======== HEADER ======== -->
+    <header id="header">
+      <a href="/"><i class="bx bx-code-curly"></i></a>
+      <nav class="navbar">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="/">Home</a></li>
+          <li class="nav__item"><a href="/#projects">Projects</a></li>
+          <!--li class="nav__item"><a href="/blog.html">Blog</a></li-->
+          <div class="nav__item themecolor" title="change theme">
+            <i class="bx bxs-sun" title="light mode"></i>
+            <i class="bx bxs-moon" title="dark  mode"></i>
+          </div>
+        </ul>
+      </nav>
+      <div class="open_close_menu__container">
+        <i class="bx bx-menu"></i>
+        <i class="bx bx-x"></i>
+      </div>
+    </header>
+    <!-- ======== MAIN ======== -->
+    <main>
+      <!-- SECTION 1: Portrait and Main Title -->
+      <div class="row vh75">
+        <img
+          class="six columns img-card"
+          src="images/heatmap/heatmap-logo-vscode.png"
+          alt="Logo"
+        />
+      </div>
+
+      <br class="spacer" />
+
+      <p class="h2-standard bold">Overview</p>
+      <p class="h3-standard">Codebase Insights Visualization for VSCode</p>
+      <br class="spacer-xs" />
+      <div class="row"><hr class="hr-30" /></div>
+
+      <br class="spacer-mini" />
+      <p class="p-article padded">
+        Almost every professional programmer knows the struggle of trying to understand another person's code when joining a new project.
+        The computer seems to know everything, but it can't tell you which files bugs or architecture problems lurk in.
+        Why can't the computer help you?
+      </p>
+      <p class="p-article padded">
+        In Spring 2022, I developed a plugin for IntelliJ IDE that provides a visualization of a codebase to idenitfy the architecture "hot-spots."
+        Every file is displayed with a "heat color" to identify the potentially problematic files in a project according to
+        its commit history, number of authors, and file size.
+      </p>
+      <p class="p-article padded">
+        For example, a file that developers continue to make commits to long after the file was originally written is a warning sign for the architecture
+        of that file. We also offer the capability to group files based on how often they appear in together in the same commit so that a hot file may tell a user to refactor that file
+        or be aware of changes they need to make in other files in order to update one particular file. 
+      </p>
+      <p class="p-article padded">
+        We analyze GitHub commits and, optionally, either Jenkins or GitHub Actions CI data to provide this data.
+      </p>
+
+
+
+      <!--Slideshow-->
+      <br class="spacer-normal" />
+      <p class="h3-standard" id="the-video">Gallery</p>
+      <br class="spacer-mini" />
+       <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <div class="row" style="height: 100%">
+            <img src="images/codebase-insights/settings.PNG" class="six columns img-slide">
+          </div>
+          <div class="slide-caption">Enter GitHub and CI tool info to begin analysis</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <div class="row" style="height: 100%">
+            <img src="images/codebase-insights/codemapOnly.png" class="six columns img-slide">
+          </div>
+          <div class="slide-caption">Each file is a blue/purple/red circle nested inside some directories</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <div class="row" style="height: 100%">
+            <img src="images/codebase-insights/codemapControlPanel.PNG" class="six columns img-slide">
+          </div>
+          <div class="slide-caption">A control panel shows the 5 metrics of any file clicked on</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <div class="row" style="height: 100%">
+            <img src="images/codebase-insights/graphStyleCoauthorshipNetwork.PNG" class="six columns img-slide">
+          </div>
+          <div class="slide-caption">Co-authorship Network shows shared knowledge between authors</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <div class="row" style="height: 100%">
+            <img src="images/codebase-insights/can2.PNG" class="six columns img-slide">
+          </div>
+          <div class="slide-caption">Final version of the Co-Authorship Network: Venn Diagram style</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev-slide-button" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next-slide-button" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <br class="spacer-mini" />
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div> 
+
+
+      <!--Responsibilities-->
+      <br class="spacer-normal" />
+      <p class="h3-standard">Responsibilities</p>
+      <ul class="ul-article padded">
+        <li>Developed <!--&nbsp;<i style="font-size: 16px;" class="bx bxl-spring-boot"></i-->Spring Boot back-end</li>
+        <ul class="ul-article padded-half">
+          <li>Created all request endpoints</li>
+          <li>Designed codebase analysis algorithms</li>
+        </ul>
+        <ul class="ul-article padded-half"></ul> <!--mini spacer-->
+        <li>Deployed back-end to <!--i style="font-size: 16px;" class="bx bxl-heroku"></i-->Heroku</li>
+        <li>Linked project to a MongoDB database</li>
+        <li>Front-end support</li>
+        <ul class="ul-article padded-half">
+          <li>Created Settings tab</li>
+          <li>Implemented Co-Authorship Network</li>
+        </ul>
+        <ul class="ul-article padded-half"></ul> <!--mini spacer-->
+        <li>Led demos to glean feedback from our customers</li>
+      </ul>
+
+
+      <!--Video-->
+      <br class="spacer-normal" />
+      <p class="h3-standard" id="the-video">Video Demo</p>
+      <p class="h5-standard">Provided by Isaiah Sherfick</p>
+      <br class="spacer-mini" />
+      <video width="100%" height="100%" controls>
+        <source src="images/codebase-insights/Demo.mp4" type="video/mp4">
+        Your browser does not support the playback of the video :(
+      </video> 
+      <br class="spacer-mini" />
+
+      
+      <!--Features List-->
+      <br class="spacer-mini" />
+      <p class="h3-standard">Features</p>
+      <ul class="ul-article padded">
+        <p class="ul-subheader bold">Code Map</p>
+        <ul class="ul-article padded-half">
+          <li>Each file is given a heat color based on either:</li>
+          <ul class="ul-article padded-half">
+            <li>Number of commits</li>
+            <li>Number of authors</li>
+            <li>File size</li>
+            <li>Degree of coupling (how often it is committed with related files)</li>
+            <li>Number of build failures</li>
+            <li>Overall (weighted total of all the above metrics)</li>
+          </ul>
+          <ul class="ul-article padded-half"></ul> <!--mini spacer-->
+          <li>Drag the radar chart points then Submit Feedback to tell us which metrics were ranked inaccurately</li>
+          <ul class="ul-article padded-half">
+            <li>In the future, this data could be fed into a machine learning algorithm to enhance the accuracy of the analysis algorithms</li>
+          </ul>
+        </ul>
+        <p class="ul-subheader bold">Co-Authorship Network</p>
+        <ul class="ul-article padded-half">
+          <li>Shows amount of shared knowledge between authors as edges in a graph</li>
+          <li>Provides a list of files known by each author</li>
+          <ul class="ul-article padded-half">
+            <li>Files are ranked and colorized by bus factor</li>
+          </ul>
+        </ul>
+        <p class="ul-subheader bold">Commit Risk Assessment</p>
+        <ul class="ul-article padded-half">
+          <li>Based on the files you've modified...</li>
+          <ul class="ul-article padded-half">
+            <li>Provides heat metrics of those files</li>
+            <li>Recommends changes to tighly-coupled files</li>
+          </ul>
+        </ul>
+      </ul>
+
+
+      <!--Tech Stack-->
+      <br class="spacer-normal" />
+      <p class="h3-standard">Tech Stack</p>
+      <div class="row">
+        <div class="six columns list-duo-column padded">
+            <p class="h4-standard"><u>Technologies</u></p>
+            <ul class="ul-tech padded">
+                <li><i class="bx bxl-spring-boot"></i>Spring Boot</li>
+                <li><i class="bx bx-code-alt"></i>TypeScript</li>
+                <li><i class="bx bxl-visual-studio"></i>VSCode Extension API</li>
+                <li><i class="bx bxl-mongodb"></i>MongoDB</li>
+            </ul>            
+        </div>
+        <div class="six columns list-duo-column padded">
+          <p class="h4-standard"><u>Tools</u></p>
+            <ul class="ul-tech padded">
+                <li><i class="bx bxl-github"></i>GitHub</li>
+                <li><i class="bx bx-log-in-circle"></i>GitHub Actions</li>
+                <li><i class="bx bx-task"></i>GitHub Issues</li>
+                <li><i class="bx bxs-flask"></i>JUnit</li>
+                <li><i class="bx bxs-log-in-circle"></i>Jenkins API</li>
+                <li><i class="bx bxl-heroku"></i>Heroku</li>
+                <li><i class="bx bx-cube-alt"></i>SonarQube</li>
+            </ul>
+        </div>
+      </div>
+
+
+
+      <!--Website Links-->
+      <br class="spacer-normal" />
+      <div class="thin-border padded">
+        <br class="spacer-xs" />
+        <p class="h3-standard">
+          <a class="a-bland" href="codebase-insights-writeup.html">
+            View the How-to Guide
+          </a>
+        </p>
+        <br class="spacer-xs" />
+      </div>
+
+      <br class="spacer-normal" />
+
+      <p class="h1-standard bold">View the IntelliJ Version</p>
+      <br class="spacer-mini" />
+      <div class="row div-card">
+        <a class="row a-card shadowed" href="codebase-insights-intellij.html">
+          <img
+            class="columns img-card"
+            src="images/heatmap/heatmap-logo-intellij.png"
+            alt="IntelliJ Plugin Logo"
+          />
+        </a>
+      </div>
+
+      <br class="spacer-normal" />
+
+      <p class="h1-standard bold">View Another Project</p>
+      <br class="spacer-mini" />
+      <div class="row div-card">
+        <a class="row a-card shadowed" href="game-maker.html">
+          <img class="columns img-card"
+          src="images/game-maker/game-maker-logo.png" alt="Game Maker Engine">
+        </a>
+        <a class="row a-card shadowed" href="supercontinent-lutil.html">
+          <img
+            class="columns img-card"
+            src="images/lutil/SUPERCONTINENT_LÙTIL.png"
+            alt="Game"
+          />
+        </a>
+      </div>
+
+      <br class="spacer-normal" />
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="end__footer">
+      <div class="div-copyright">
+        <table style="width: 90%;">
+          <tr>
+            <td style="text-align: left;">
+              <span>© Copyright Pete Fyffe 2022</span>
+            </td>
+            <td style="text-align: right;">
+              <p><a href="/credits.html" class="a-footer">Acknowledgements</a></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+  </body>
+
+
+
+
+
+  
+<script src="scripts/glean.js"></script>
+<script src="scripts/dark-mode-navbar.js"></script>
+<script src="scripts/slideshow.js"></script>
+</html>

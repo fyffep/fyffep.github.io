@@ -56,6 +56,18 @@ main {
   color: var(--link-text);
 }
 
+.a-bland {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.a-bland:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.a-bland:visited {
+  color: var(--primary-color);
+}
+
 .thin-border {
   border: 2px solid var(--primary-color);
   border-radius: 30px;
