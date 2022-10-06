@@ -78,21 +78,28 @@
         The game puts <u>online multiplayer</u> first, so every action must be sent to the back-end server and echoed to the other players. 
         Players can walk around a vast, procedurally-generated world and fight monsters to grow stronger.
       </p>
-      <p class="p-article padded">
-        <!--To develop this project, I think carefully about how and when information would be processed through the server.-->
+      <!-- <p class="p-article padded">
         For this project, it was important to keep not only extensibility and maintainability in mind but also performance.
         Since player and enemy positions must be updated many times per second, 
         I had to develop a server that would keep up.
-      </p>
+      </p> -->
       <p class="p-article padded">
-        React Hooks made this project exciting; the majority of view updates are done through them. 
-        In this case, taking just a few hours to learn React's newest features had a monumental impact.
+        This project essentially tests the capabilities of React Hooks. 
+        Hooks made updating the view a breeze, so taking just a few hours to learn React's newest features had a monumental impact.
         I explain briefly in the video what React Hooks are. 
       </p>
       
       <!--Video-->
       <br class="spacer-normal" />
       <p class="h3-standard">Video Demo</p>
+      <p class="p-article padded">
+        In this video, I explain show React Hooks were used to implement basic player movement. </p>
+      </p>
+      <p class="p-article padded">
+        There are two copies of the player: one that is actively controlled and another that reads the player's position from the server. 
+        This demonstrates the latency of the app. 
+        Future work would stream the position over a socket instead of making individual requests.
+      </p>
       <br class="spacer-mini" />
       <video width="100%" height="100%" controls>
         <source src="images/lutil/LutilVideo.mp4" type="video/mp4">
