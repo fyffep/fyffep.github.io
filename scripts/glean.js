@@ -7,27 +7,47 @@
    payload['browserName'] = getBrowserName();
    console.log(payload)
  
-   fetch("https://profile-view-counter.herokuapp.com/api/counter/increment", {
-     method: 'POST',
-     mode: 'cors',
-     credentials: 'omit',
-     headers: {
-       'Content-Type': 'application/json'
-     },
-     body: JSON.stringify(payload)
-   });
+  //  fetch("https://data.mongodb-api.com/app/data-lqrom/endpoint/data/v1/action/insertOne", {
+  //    method: 'POST',
+  //   //  mode: 'cors',
+  //    credentials: 'omit',
+  //    headers: {
+  //      'Content-Type': 'application/json',
+  //      'Access-Control-Request-Headers': '*',
+  //      /* Not meant to be too secure. */
+  //      'api-key': '20qtAPBmzJhNlnfFWZmw3OQiyRJGpZiRTo0zBz728TviQbxQgczYnNxGutec1vce',
+  //      'Access-Control-Allow-Origin': '*'
+  //    },
+  //   //  body: JSON.stringify({
+  //   //     "dataSource": "VisitCountCluster",
+  //   //     "database": "postman",
+  //   //     "collection": "counter",
+  //   //     "document": payload
+  //   //  })
+  //   body: JSON.stringify({
+  //     "document": {
+  //       "name": "John Sample",
+  //       "age": 42
+  //     }
+  //   })
+  //  });
  
  
  
-   /*let xhr = new XMLHttpRequest();
-   const url = "https://profile-view-counter.herokuapp.com/api/counter/increment";
-   xhr.open("POST", url);
+  //  let xhr = new XMLHttpRequest();
+  //  const url = "https://data.mongodb-api.com/app/data-lqrom/endpoint/data/v1/action/insertOne";
+  //  xhr.open("POST", url);
  
-   xhr.setRequestHeader("Accept", "application/json");
-   xhr.setRequestHeader("Content-Type", "application/json");
-   xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+  //  xhr.setRequestHeader("Accept", "application/json");
+  //  xhr.setRequestHeader("Content-Type", "application/json");
+  //  xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+  //  xhr.setRequestHeader("api-key", "20qtAPBmzJhNlnfFWZmw3OQiyRJGpZiRTo0zBz728TviQbxQgczYnNxGutec1vce");
  
-   xhr.send(payload);*/
+  //  payload = {"document": {
+  //       "name": "John Sample",
+  //       "age": 42
+  //     }};
+  //  xhr.send(payload);
  }
  //On page load, send page name and name of browser to server to count number of visits
  document.addEventListener('DOMContentLoaded', (event) => {
