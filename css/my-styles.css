@@ -110,27 +110,29 @@ b {
 
 /*///////////////// LANDING & NAV BAR ELEMENTS ///////////////////////*/
 
-.button-landing-page {
-    width: 50% !important;
-    height: auto !important;
-    font-size: 24px !important;
-    font-family: "Titillium Web" !important;
-    border-radius: 18px !important;
-    border: none !important;
-}
-
 .img-landing {
-    order: 1;
-    max-height: 18.0rem;
-    max-width: 18.0rem;
-    border: 10px solid var(--primary-color);
-    border-radius: 100%;
+    order: 2;
+    margin-right: 10px;
+    width: auto;
+    height: auto;
+    max-height: 60vh;
+    border-left: 6px solid var(--primary-color);
+    border-right: 6px solid var(--primary-color);
+    /* border-radius: 20%; */
+    z-index: 1;
 }
 .title-landing {
-    order: 2;
-    padding-left: 10%;
-    padding-right: 10%;
+    order: 1;
+    padding-left: 30px;
+    padding-right: 30px;
     width: auto;
+    margin-top: 3em;
+}
+.landing-container {
+    align-items: top;
+    justify-content: center;
+    display: flex;
+    /* flex-direction: row; */
 }
 .h1-landing {
     font-size: 2.5rem;
