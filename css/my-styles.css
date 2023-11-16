@@ -53,6 +53,11 @@ body {
     font-weight: 300;
     transition: background-color 300ms;
 }
+
+b {
+    font-weight: bold;
+}
+
 .bx {
   cursor: pointer;
 }
@@ -175,9 +180,17 @@ body {
     text-align: justify;
     width: 80%;
 }
+
+.p-indented {
+    text-indent: 2.0rem;
+}
+
 .ul-article {
     margin-top: 0.5rem;
     width: 80%;
+}
+.ul-article li {
+    margin-bottom: 0.5rem;
 }
 .ul-subheader {
     margin-top: 0.5rem;
